@@ -1,0 +1,507 @@
+Prefix(:=<https://w3id.org/pmd/ao/hto/imports/pmdco_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://w3id.org/pmd/ao/hto/imports/pmdco_import.owl>
+<https://w3id.org/pmd/ao/hto/releases/2025-06-13/imports/pmdco_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/3.0.0-alpha1>)
+Annotation(owl:versionInfo "2025-06-13")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000014>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000833>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020023>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020098>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020099>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020116>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000056>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000057>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0000004>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0000015>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0000016>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000121>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000122>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000123>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000124>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000125>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000226>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000227>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000228>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000229>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000410>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000420>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000421>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OMO_0001000>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020006>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020007>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020008>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020009>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020010>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020011>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020012>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020013>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020014>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020015>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020016>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020017>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020018>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020019>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020027>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020097>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020100>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020107>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020109>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020110>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020111>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020117>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020118>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020119>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020120>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020121>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020122>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020123>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020124>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020125>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (has realization)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "has realization"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/BFO_0000055>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/BFO_0000017>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realizes)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000015>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000056> (participates in)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000056> "participates in"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000056> <http://purl.obolibrary.org/obo/BFO_0000057>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000056> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000057> (has participant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000057> "has participant"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000057> <http://purl.obolibrary.org/obo/BFO_0000015>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000057> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (is about)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000136> "A (currently) primitive relation that relates an information artifact to an entity."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/co/PMD_0000004>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Object Property: <https://w3id.org/pmd/co/PMD_0000004> (is subject of)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000004> "is subject of"@en)
+
+# Object Property: <https://w3id.org/pmd/co/PMD_0000015> (has input)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000015> "has input"@de)
+SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0000015> <http://purl.obolibrary.org/obo/BFO_0000057>)
+
+# Object Property: <https://w3id.org/pmd/co/PMD_0000016> (has output)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000016> "has output"@de)
+SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0000016> <http://purl.obolibrary.org/obo/BFO_0000057>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity"@en)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000002> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000003> (occurrent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000003> "occurrent"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000006> (spatial region)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000006> "spatial region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000017> (realizable entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000017> "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000017> "realizable entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (specifically dependent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "specifically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000141> (immaterial entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000030> "A generically dependent continuant that is about some thing."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000001>))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (curation status specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000078> "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000078> "curation status specification"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000078> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000102> (data about an ontology part)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000102> "Data about an ontology part is a data item about a part of an ontology, for example a term"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000102> "data about an ontology part"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000102> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (obsolescence reason specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000225> "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000225> "obsolescence reason specification"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000225> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000103> <http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229> <http://purl.obolibrary.org/obo/OMO_0001000>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (denotator type)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000409> "A denotator type indicates how a term should be interpreted from an ontological perspective."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000409> "denotator type"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000409> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000421>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000409> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0000014> (plan)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000014> "plan"@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000014> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0000833> (Manufacturing Process)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000833> "Herstellungsprozess"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000833> "Manufacturing Process"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000833> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000015> <http://purl.obolibrary.org/obo/BFO_0000040>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000016> <http://purl.obolibrary.org/obo/BFO_0000040>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <https://w3id.org/pmd/co/PMD_0000014>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000015> <http://purl.obolibrary.org/obo/BFO_0000040>))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000016> <http://purl.obolibrary.org/obo/BFO_0000040>))
+
+# Class: <https://w3id.org/pmd/co/PMD_0020023> (Metallic Grain Structures)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020023> "Metallic Grain Structures"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020023> ObjectOneOf(<https://w3id.org/pmd/co/PMD_0020027> <https://w3id.org/pmd/co/PMD_0020097> <https://w3id.org/pmd/co/PMD_0020100> <https://w3id.org/pmd/co/PMD_0020107> <https://w3id.org/pmd/co/PMD_0020109> <https://w3id.org/pmd/co/PMD_0020110> <https://w3id.org/pmd/co/PMD_0020111>))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020023> <https://w3id.org/pmd/co/PMD_0020098>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0020098> (Nature constant)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020098> "Nature constant"@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020098> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0020099> (Bravais Lattice (3D))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020099> "Bravais Lattice (3D)"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020099> ObjectOneOf(<https://w3id.org/pmd/co/PMD_0020006> <https://w3id.org/pmd/co/PMD_0020007> <https://w3id.org/pmd/co/PMD_0020008> <https://w3id.org/pmd/co/PMD_0020009> <https://w3id.org/pmd/co/PMD_0020010> <https://w3id.org/pmd/co/PMD_0020011> <https://w3id.org/pmd/co/PMD_0020012> <https://w3id.org/pmd/co/PMD_0020013> <https://w3id.org/pmd/co/PMD_0020014> <https://w3id.org/pmd/co/PMD_0020015> <https://w3id.org/pmd/co/PMD_0020016> <https://w3id.org/pmd/co/PMD_0020017> <https://w3id.org/pmd/co/PMD_0020018> <https://w3id.org/pmd/co/PMD_0020019>))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020099> <https://w3id.org/pmd/co/PMD_0020098>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0020116> (Aggregate state value)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020116> "Aggregate state value"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020116> ObjectOneOf(<https://w3id.org/pmd/co/PMD_0020117> <https://w3id.org/pmd/co/PMD_0020118> <https://w3id.org/pmd/co/PMD_0020119> <https://w3id.org/pmd/co/PMD_0020120> <https://w3id.org/pmd/co/PMD_0020121> <https://w3id.org/pmd/co/PMD_0020122> <https://w3id.org/pmd/co/PMD_0020123> <https://w3id.org/pmd/co/PMD_0020124> <https://w3id.org/pmd/co/PMD_0020125>))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020116> <https://w3id.org/pmd/co/PMD_0020098>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000002> (example to be eventually removed)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000002> "example to be eventually removed"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000103> (failed exploratory term)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000103> "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000103> "failed exploratory term"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000120> (metadata complete)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000120> "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000120> "metadata complete"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (organizational term)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000121> "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000121> "organizational term"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000122> (ready for release)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000122> "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000122> "ready for release"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000123> (metadata incomplete)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000123> "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000123> "metadata incomplete"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000124> (uncurated)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000124> "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000124> "uncurated"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000125> (pending final vetting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000125> "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000125> "pending final vetting"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (placeholder removed)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000226> "placeholder removed"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (terms merged)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000227> "terms merged"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (term imported)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000228> "term imported"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (term split)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000229> "term split"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000410> (universal)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000410> "universal"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000420> (defined class)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000420> "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000420> "defined class"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000421> (named class expression)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000421> "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000421> "named class expression"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000423> (to be replaced with external ontology term)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000423> "Terms with this status should eventually replaced with a term from another ontology."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000423> "to be replaced with external ontology term"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (requires discussion)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000428> "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000428> "requires discussion"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/OMO_0001000> (out of scope)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMO_0001000> "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020006> (Bravais Lattice Triclinic Primitve)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020006> "Bravais Lattice Triclinic Primitve"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020007> (Bravais Lattice Monoclinic Primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020007> "Bravais Lattice Monoclinic Primitive"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020008> (Bravais Lattice Monoclinic Base-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020008> "Bravais Lattice Monoclinic Base-centered"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020009> (Bravais Lattice Orthorombic Primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020009> "Bravais Lattice Orthorombic Primitive"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020010> (Bravais Lattice Orthorhombic Base-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020010> "Bravais Lattice Orthorhombic Base-centered"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020011> (Bravais Lattice Orthorhombic Body-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020011> "Bravais Lattice Orthorhombic Body-centered"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020012> (Bravais Lattice Orthorhombic Face-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020012> "Bravais Lattice Orthorhombic Face-centered"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020013> (Bravais Lattice Tetragonal Primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020013> "Bravais Lattice Tetragonal Primitive"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020014> (Bravais Lattice Tetragonal Body-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020014> "Bravais Lattice Tetragonal Body-centered"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020015> (Bravais Lattice Hexagonal Rhombohedral Primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020015> "Bravais Lattice Hexagonal Rhombohedral Primitive"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020016> (Bravais Lattice Hexagonal Hexagonal Primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020016> "Bravais Lattice Hexagonal Hexagonal Primitive"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020017> (Bravais Lattice Cubic Primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020017> "Bravais Lattice Cubic Primitive"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020018> (Bravais Lattice Cubic Body-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020018> "Bravais Lattice Cubic Body-centered"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020019> (Bravais Lattice Cubic Face-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020019> "Bravais Lattice Cubic Face-centered"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020027> (Bainite)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020027> "Bainite"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020097> (Austenite)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020097> "Austenite"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020100> (Ferrite)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020100> "Ferrite"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020107> (Ledeburite)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020107> "Ledeburite"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020109> (Pearlite)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020109> "Pearlite"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020110> (Widmanstatten structure)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020110> "Widmanstatten structure"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020111> (Martensite)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020111> "Martensite"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020117> (Aggregate state solid)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020117> "Aggregate state solid"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020118> (Aggregate state liquid)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020118> "Aggregate state liquid"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020119> (Aggregate state gasous)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020119> "Aggregate state gasous"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020120> (Aggregate state plasma)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020120> "Aggregate state plasma"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020121> (Aggregate state atom gas)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020121> "Aggregate state atom gas"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020122> (Aggregate state supercritical fluid)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020122> "Aggregate state supercritical fluid"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020123> (Aggregate state mesomorphic)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020123> "Aggregate state mesomorphic"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020124> (Aggregate state suprafluid)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020124> "Aggregate state suprafluid"@en)
+
+# Individual: <https://w3id.org/pmd/co/PMD_0020125> (Aggregate state suprasolid)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020125> "Aggregate state suprasolid"@en)
+
+
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
+DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020006> <https://w3id.org/pmd/co/PMD_0020007> <https://w3id.org/pmd/co/PMD_0020008> <https://w3id.org/pmd/co/PMD_0020009> <https://w3id.org/pmd/co/PMD_0020010> <https://w3id.org/pmd/co/PMD_0020011> <https://w3id.org/pmd/co/PMD_0020012> <https://w3id.org/pmd/co/PMD_0020013> <https://w3id.org/pmd/co/PMD_0020014> <https://w3id.org/pmd/co/PMD_0020015> <https://w3id.org/pmd/co/PMD_0020016> <https://w3id.org/pmd/co/PMD_0020017> <https://w3id.org/pmd/co/PMD_0020018> <https://w3id.org/pmd/co/PMD_0020019>)
+DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020117> <https://w3id.org/pmd/co/PMD_0020118> <https://w3id.org/pmd/co/PMD_0020119> <https://w3id.org/pmd/co/PMD_0020120> <https://w3id.org/pmd/co/PMD_0020121> <https://w3id.org/pmd/co/PMD_0020122> <https://w3id.org/pmd/co/PMD_0020123> <https://w3id.org/pmd/co/PMD_0020124> <https://w3id.org/pmd/co/PMD_0020125>)
+)
