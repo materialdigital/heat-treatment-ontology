@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/hto/hto-full.owl#"
-     xml:base="http://purl.obolibrary.org/obo/hto/hto-full.owl"
+<rdf:RDF xmlns="https://w3id.org/pmd/ao/hto/hto-full.owl#"
+     xml:base="https://w3id.org/pmd/ao/hto/hto-full.owl"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/hto/hto-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/hto/releases/2025-06-13/hto-full.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/ao/hto/hto-full.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/hto/releases/2025-06-24/hto-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Heat Treatment Ontology</dcterms:title>
-        <owl:versionInfo>2025-06-13</owl:versionInfo>
+        <owl:versionInfo>2025-06-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -26,6 +27,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
@@ -56,6 +69,126 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">has realization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000004 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000004">
+        <rdfs:label xml:lang="en">is subject of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000015 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000015">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:label xml:lang="de">has input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000016 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000016">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:label xml:lang="de">has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -64,11 +197,818 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HTO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HTO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:label xml:lang="en">entity</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">occurrent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:label xml:lang="en">spatial region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:label xml:lang="en">process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000078">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000002"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000120"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000121"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000122"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000123"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000124"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000125"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000423"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000428"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+        <obo:IAO_0000115 xml:lang="en">The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">curation status specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">Data about an ontology part is a data item about a part of an ontology, for example a term</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">data about an ontology part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000225">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000103"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000226"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMO_0001000"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+        <obo:IAO_0000115 xml:lang="en">The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">obsolescence reason specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000409">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000410"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000420"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000421"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+        <obo:IAO_0000115 xml:lang="en">A denotator type indicates how a term should be interpreted from an ontological perspective.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">denotator type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/ao/hto/HTO_0000000 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/ao/hto/HTO_0000000">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000833"/>
+        <rdfs:label xml:lang="en">heat treatment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000014 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:label xml:lang="en">plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000833 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000833">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000015"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000016"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000014"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Herstellungsprozess</rdfs:label>
+        <rdfs:label xml:lang="en">Manufacturing Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020023 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020023">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020027"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020097"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020100"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020107"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020109"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020110"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020111"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020098"/>
+        <rdfs:label xml:lang="en">Metallic Grain Structures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020098 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:label xml:lang="en">Nature constant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020099 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020099">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020006"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020007"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020008"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020009"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020010"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020011"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020012"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020013"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020014"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020015"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020016"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020017"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020018"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020019"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020098"/>
+        <rdfs:label xml:lang="en">Bravais Lattice (3D)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020116 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020116">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020117"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020118"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020119"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020120"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020121"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020122"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020123"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020124"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020125"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020098"/>
+        <rdfs:label xml:lang="en">Aggregate state value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
+        <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
+        <obo:IAO_0000115 xml:lang="en">Term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">organizational term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
+        <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
+        <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">uncurated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
+        <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000227 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000227">
+        <rdfs:label xml:lang="en">terms merged</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000228 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
+        <rdfs:label xml:lang="en">term imported</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000229 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000229">
+        <rdfs:label xml:lang="en">term split</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000410 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000410">
+        <rdfs:label xml:lang="en">universal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000420 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000420">
+        <obo:IAO_0000115 xml:lang="en">A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">defined class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000421 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000421">
+        <obo:IAO_0000115 xml:lang="en">A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">named class expression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
+        <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
+        <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0001000 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMO_0001000">
+        <obo:IAO_0000115 xml:lang="en">The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not.</obo:IAO_0000115>
+        <rdfs:label>out of scope</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020006">
+        <rdfs:label xml:lang="en">Bravais Lattice Triclinic Primitve</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020007 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020007">
+        <rdfs:label xml:lang="en">Bravais Lattice Monoclinic Primitive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020008 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020008">
+        <rdfs:label xml:lang="en">Bravais Lattice Monoclinic Base-centered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020009 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020009">
+        <rdfs:label xml:lang="en">Bravais Lattice Orthorombic Primitive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020010 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020010">
+        <rdfs:label xml:lang="en">Bravais Lattice Orthorhombic Base-centered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020011 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020011">
+        <rdfs:label xml:lang="en">Bravais Lattice Orthorhombic Body-centered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020012 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020012">
+        <rdfs:label xml:lang="en">Bravais Lattice Orthorhombic Face-centered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020013 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020013">
+        <rdfs:label xml:lang="en">Bravais Lattice Tetragonal Primitive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020014 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020014">
+        <rdfs:label xml:lang="en">Bravais Lattice Tetragonal Body-centered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020015">
+        <rdfs:label xml:lang="en">Bravais Lattice Hexagonal Rhombohedral Primitive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020016">
+        <rdfs:label xml:lang="en">Bravais Lattice Hexagonal Hexagonal Primitive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020017 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020017">
+        <rdfs:label xml:lang="en">Bravais Lattice Cubic Primitive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020018 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020018">
+        <rdfs:label xml:lang="en">Bravais Lattice Cubic Body-centered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020019 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020019">
+        <rdfs:label xml:lang="en">Bravais Lattice Cubic Face-centered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020027 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020027">
+        <rdfs:label xml:lang="en">Bainite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020097 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020097">
+        <rdfs:label xml:lang="en">Austenite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020100 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020100">
+        <rdfs:label xml:lang="en">Ferrite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020107 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020107">
+        <rdfs:label xml:lang="en">Ledeburite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020109 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020109">
+        <rdfs:label xml:lang="en">Pearlite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020110 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020110">
+        <rdfs:label xml:lang="en">Widmanstatten structure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020111 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020111">
+        <rdfs:label xml:lang="en">Martensite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020117 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020117">
+        <rdfs:label xml:lang="en">Aggregate state solid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020118 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020118">
+        <rdfs:label xml:lang="en">Aggregate state liquid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020119 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020119">
+        <rdfs:label xml:lang="en">Aggregate state gasous</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020120 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020120">
+        <rdfs:label xml:lang="en">Aggregate state plasma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020121 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020121">
+        <rdfs:label xml:lang="en">Aggregate state atom gas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020122 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020122">
+        <rdfs:label xml:lang="en">Aggregate state supercritical fluid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020123 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020123">
+        <rdfs:label xml:lang="en">Aggregate state mesomorphic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020124 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020124">
+        <rdfs:label xml:lang="en">Aggregate state suprafluid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020125 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020125">
+        <rdfs:label xml:lang="en">Aggregate state suprasolid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020006"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020007"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020008"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020009"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020010"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020011"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020012"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020013"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020014"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020015"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020016"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020017"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020018"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020019"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020117"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020118"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020119"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020120"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020121"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020122"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020123"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020124"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020125"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 

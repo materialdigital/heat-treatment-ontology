@@ -40,9 +40,10 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
-# Class: <https://w3id.org/pmd/ao/hto/HTO_0000000> (root node)
+# Class: <https://w3id.org/pmd/ao/hto/HTO_0000000> (heat treatment process)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/hto/HTO_0000000> "root node"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/hto/HTO_0000000> "heat treatment process"@en)
+SubClassOf(<https://w3id.org/pmd/ao/hto/HTO_0000000> <https://w3id.org/pmd/co/PMD_0000833>)
 
 
 )
