@@ -22,6 +22,7 @@ Declaration(Class(<https://w3id.org/pmd/ao/hto/Atmosphere>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/AtmospherePressure>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/BelowAmbientPressure>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/CarbonPotential>))
+Declaration(Class(<https://w3id.org/pmd/ao/hto/Carburizing>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/Chamber>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/ChamberPressure>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/ChamberScope>))
@@ -62,6 +63,7 @@ Declaration(Class(<https://w3id.org/pmd/ao/hto/LeakageCheck>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/LeakageFlag>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/LeakageInterval>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/Manufacturer>))
+Declaration(Class(<https://w3id.org/pmd/ao/hto/MediaMovement>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/Medium>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/Nitriding>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/NitridingDepth>))
@@ -93,10 +95,7 @@ Declaration(Class(<https://w3id.org/pmd/ao/hto/VacuumPressure>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/WithGasPurging>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/WithoutIntermediateEvacuation>))
 Declaration(Class(<https://w3id.org/pmd/ao/hto/toBeHeatTreatedRole>))
-Declaration(Class(<https://w3id.org/pmd/co/Device>))
-Declaration(Class(<https://w3id.org/pmd/co/2.0.8/MediaMovement>))
-Declaration(Class(<https://w3id.org/pmd/hto/Carburizing>))
-Declaration(Class(<https://w3id.org/pmd/hto/CoolingProcess>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000602>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000039>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0001938>))
@@ -183,6 +182,16 @@ AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/hto/CarbonPotentia
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/hto/CarbonPotential> "Carbon content of a specimen of pure iron in equilibrium with a carbourizing medium under specific conditions."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/ao/hto/CarbonPotential> "Carbon Potential"@en)
 SubClassOf(<https://w3id.org/pmd/ao/hto/CarbonPotential> <http://purl.obolibrary.org/obo/IAO_0000109>)
+
+# Class: <https://w3id.org/pmd/ao/hto/Carburizing> (<https://w3id.org/pmd/ao/hto/Carburizing>)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/ao/hto/Carburizing> "Potentiell ableitbar mit bestimmten Fluss-Schwellenwerten"@de)
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/hto/Carburizing> <https://w3id.org/pmd/hto/>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/hto/Carburizing> "Heattreatment process with the scope to transfer carbon from the atmosphere to the component surface."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/hto/Carburizing> "Prozessschritt, während dessen Kohlenstoff aus der Atmosphäre an der Bauteiloberfläche übertragen wird"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/ao/hto/Carburizing> "Aufkohlen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/ao/hto/Carburizing> "Carburizing"@en)
+SubClassOf(<https://w3id.org/pmd/ao/hto/Carburizing> <https://w3id.org/pmd/co/PMD_0060008>)
 
 # Class: <https://w3id.org/pmd/ao/hto/Chamber> (<https://w3id.org/pmd/ao/hto/Chamber>)
 
@@ -325,7 +334,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
                        co:relatesTo chebie:Hydrogen ;
                       co:unit qudt:Mol-per-litre .")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/ao/hto/FlowRate> "Flow Rate"@en)
-SubClassOf(<https://w3id.org/pmd/ao/hto/FlowRate> <https://w3id.org/pmd/co/2.0.8/MediaMovement>)
+SubClassOf(<https://w3id.org/pmd/ao/hto/FlowRate> <https://w3id.org/pmd/ao/hto/MediaMovement>)
 
 # Class: <https://w3id.org/pmd/ao/hto/FlowRateTotal> (<https://w3id.org/pmd/ao/hto/FlowRateTotal>)
 
@@ -333,7 +342,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/ao/hto/FlowRateTotal> "Un
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/hto/FlowRateTotal> <https://w3id.org/pmd/hto/>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/hto/FlowRateTotal> "Measured value for the total flow rate of all process media"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/ao/hto/FlowRateTotal> "Flow Rate Total"@en)
-SubClassOf(<https://w3id.org/pmd/ao/hto/FlowRateTotal> <https://w3id.org/pmd/co/2.0.8/MediaMovement>)
+SubClassOf(<https://w3id.org/pmd/ao/hto/FlowRateTotal> <https://w3id.org/pmd/ao/hto/MediaMovement>)
 
 # Class: <https://w3id.org/pmd/ao/hto/Fluid> (<https://w3id.org/pmd/ao/hto/Fluid>)
 
@@ -505,6 +514,10 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/ao/hto/Manufacturer> "manufacturer"@en)
 SubClassOf(<https://w3id.org/pmd/ao/hto/Manufacturer> <https://w3id.org/pmd/co/PMD_0000879>)
 
+# Class: <https://w3id.org/pmd/ao/hto/MediaMovement> (<https://w3id.org/pmd/ao/hto/MediaMovement>)
+
+SubClassOf(<https://w3id.org/pmd/ao/hto/MediaMovement> <https://w3id.org/pmd/co/PMD_0000008>)
+
 # Class: <https://w3id.org/pmd/ao/hto/Medium> (<https://w3id.org/pmd/ao/hto/Medium>)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/hto/Medium> "A surrounding or enveloping substance")
@@ -605,8 +618,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/hto/QuenchingLeadtime> "Parameter indicatin the duration right before the quenching  process "@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/ao/hto/QuenchingLeadtime> "Abschreckvorlaufzeit"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/ao/hto/QuenchingLeadtime> "Quenching Leadtime"@en)
-SubClassOf(<https://w3id.org/pmd/ao/hto/QuenchingLeadtime> <http://purl.obolibrary.org/obo/BFO_0000202>)
-SubClassOf(<https://w3id.org/pmd/ao/hto/QuenchingLeadtime> <https://w3id.org/pmd/co/PMD_0000880>)
+SubClassOf(<https://w3id.org/pmd/ao/hto/QuenchingLeadtime> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
 # Class: <https://w3id.org/pmd/ao/hto/RecordingInterval> (<https://w3id.org/pmd/ao/hto/RecordingInterval>)
 
@@ -768,33 +780,9 @@ SubClassOf(<https://w3id.org/pmd/ao/hto/WithoutIntermediateEvacuation> <https://
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/ao/hto/toBeHeatTreatedRole> "todo")
 SubClassOf(<https://w3id.org/pmd/ao/hto/toBeHeatTreatedRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
-# Class: <https://w3id.org/pmd/co/Device> (<https://w3id.org/pmd/co/Device>)
+# Class: <https://w3id.org/pmd/co/PMD_0000602> (Device)
 
-SubClassOf(<https://w3id.org/pmd/co/Device> <http://purl.obolibrary.org/obo/BFO_0000030>)
-
-# Class: <https://w3id.org/pmd/co/2.0.8/MediaMovement> (<https://w3id.org/pmd/co/2.0.8/MediaMovement>)
-
-SubClassOf(<https://w3id.org/pmd/co/2.0.8/MediaMovement> <https://w3id.org/pmd/co/PMD_0000008>)
-
-# Class: <https://w3id.org/pmd/hto/Carburizing> (<https://w3id.org/pmd/hto/Carburizing>)
-
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/hto/Carburizing> "Potentiell ableitbar mit bestimmten Fluss-Schwellenwerten"@de)
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/hto/Carburizing> <https://w3id.org/pmd/hto/>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/hto/Carburizing> "Heattreatment process with the scope to transfer carbon from the atmosphere to the component surface."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/hto/Carburizing> "Prozessschritt, während dessen Kohlenstoff aus der Atmosphäre an der Bauteiloberfläche übertragen wird"@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/hto/Carburizing> "Aufkohlen"@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/hto/Carburizing> "Carburizing"@en)
-SubClassOf(<https://w3id.org/pmd/hto/Carburizing> <https://w3id.org/pmd/co/PMD_0060008>)
-
-# Class: <https://w3id.org/pmd/hto/CoolingProcess> (<https://w3id.org/pmd/hto/CoolingProcess>)
-
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/hto/CoolingProcess> <https://w3id.org/pmd/hto/>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/hto/CoolingProcess> "A process in which the temperature is lowered from a higher to a lower level."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/hto/CoolingProcess> "Ein Prozess, bei dem die Temperatur von einem höherem auf ein niedrigeres Niveau abgesenkt wird."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/hto/CoolingProcess> "process description during cooling process, e.g. fast cooling, free furnace cooling, controled cooling"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/hto/CoolingProcess> "Abkühlprozess"@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/pmd/hto/CoolingProcess> "Cooling Process"@en)
-SubClassOf(<https://w3id.org/pmd/hto/CoolingProcess> <https://w3id.org/pmd/ao/hto/HeattreatmentMethod>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000602> <http://purl.obolibrary.org/obo/BFO_0000030>)
 
 
 )
