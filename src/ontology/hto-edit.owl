@@ -130,6 +130,10 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000582> (<http://purl.obolibrary.org/obo/IAO_0000582>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000582> <http://purl.obolibrary.org/obo/IAO_0000109>)
+
 # Class: <https://w3id.org/pmd/ao/hto/AccelleratedCooling> (<https://w3id.org/pmd/ao/hto/AccelleratedCooling>)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/ao/hto/AccelleratedCooling> "Achieved via convection only."@en)
